@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meteor shower</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }    
+    body{
+        height: 100vh;
+        overflow: hidden;
+        animation: animateBg 5s linear infinite;
+    }
+    #container{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:url("./liuying.jpg");
+        background-size:cover;
+        background-position-x:center;
+    }
+    span{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 4px;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px rgba(255,255,255,.1),0 0 0 8px rgba(255,255,255,.1),0 0 20px rgba(255,255,255,.1);
+        animation: animate 3s linear infinite;
+    }
+    span:nth-child(1){
+        top: 0;
+        right: 20px;
+        left: initial;
+        animation-delay: 0s;
+        animation-duration: 10s;
+    }
+    span:nth-child(2){
+        top: 0;
+        right: 800px;
+        left: initial;
+        animation-delay: 0.2s;
+        animation-duration: 15s;
+    }
+    span:nth-child(3){
+        top: 0;
+        right: 1000px;
+        left: initial;
+        animation-delay: 0.6s;
+        animation-duration: 20s;
+    }
+    span:nth-child(4){
+        top: 0;
+        right: 1400px;
+        left: initial;
+        animation-delay: 0.9s;
+        animation-duration: 8s;
+    }
+    span:nth-child(5){
+        top: 0;
+        right: -450px;
+        left: initial;
+        animation-delay: 0.7s;
+        animation-duration: 15s;
+    }
+    span:nth-child(6){
+        top: 0;
+        right: -200px;
+        left: initial;
+        animation-delay: 0.6s;
+        animation-duration: 5s;
+    }
+    span:nth-child(7){
+        top: 0;
+        right: 850px;
+        left: initial;
+        animation-delay: 0.8s;
+        animation-duration: 7s;
+    }
+    span:nth-child(8){
+        top: 0;
+        right: 100px;
+        left: initial;
+        animation-delay: 0.1s;
+        animation-duration: 10s;
+    }
+    span:nth-child(9){
+        top: 0;
+        right: 350px;
+        left: initial;
+        animation-delay: 0.5s;
+        animation-duration: 5s;
+    }
+    span:nth-child(10){
+        top: 0;
+        right: 500px;
+        left: initial;
+        animation-delay: 0.5s;
+        animation-duration: 6s;
+    }
+    span::before{
+        content :'';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 300px;
+        height: 3px;
+        background: linear-gradient(90deg,#fff,transparent);
+    }
+    /* @keyframes animateBg {
+        0%, 100%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.2);
+        }
+    } */
+    @keyframes animate {
+        0%, 100%{
+            transform: rotate(315deg) translateX(0);
+            opacity: 1;
+        }
+        90%{
+            opacity: 1;
+        }
+        100%{
+            transform: rotate(315deg) translateX(-1000px);
+            opacity: 0;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>
